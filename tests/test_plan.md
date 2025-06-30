@@ -15,7 +15,7 @@
 | Name              | Role                         | Responsibilities |
 |-------------------|------------------------------|------------------|
 | Juliana    | Team Lead, Coordinator       | GitHub setup, planning, reporting, review |
-| Less  | Functional & UI Tester       | Test cases, bug reporting, screenshots |
+| Lester  | Functional & UI Tester       | Test cases, bug reporting, screenshots |
 | Tidimalo   | Accessibility & UX Specialist | Accessibility testing, mobile/responsive checks, usability |
 
 ---
@@ -63,7 +63,7 @@
 |---------------------|-------------|
 | Functional Testing  | Core features like login, scheduling, dashboard |
 | UI/UX Testing       | Navigation, layout consistency, user flow |
-| Accessibility (WCAG)| A11y tools + keyboard & screen reader usage |
+| Accessibility (WCAG)| Accessibility tools + keyboard & screen reader usage |
 | Compatibility       | Chrome, Firefox, Edge; mobile + desktop |
 | Performance         | Page load, responsiveness (Lighthouse) |
 
@@ -102,7 +102,7 @@ Each bug will include:
 - Steps to reproduce
 - Expected vs actual result
 - Screenshot or screen recording
-- Tags: `bug`, `critical`, `UI`, `a11y`, etc.
+- Tags: `bug`, `critical`, `UI`, `accessibility`, etc.
 
 ---
 
@@ -143,8 +143,8 @@ Each bug will include:
 
 ## 🎓 Final Submission Summary
 
-- ✅ PDF Report: `TeamName_CleanCity_QA_Report_July16.pdf`
-- ✅ Video File: `TeamName_CleanCity_QA_Video_July16.mp4`
+- ✅ PDF Report: `ESPADA_CleanCity_QA_Report_July16.pdf`
+- ✅ Video File: `ESPADA_CleanCity_QA_Video_July16.mp4`
 - ✅ All test docs under `/tests` folder
 - ✅ GitHub Project Board fully used
 - ✅ Defects categorized & well documented

@@ -1,6 +1,6 @@
 # 👥 Team Roles and Weekly Responsibilities
 
-## 📌 Team Name: [Your Team Name]  
+## 📌 Team Name: ESPADA 
 **Project:** CleanCity – Waste Pickup Scheduler  
 **Project Duration:** June 26 – July 16, 2025  
 
@@ -9,11 +9,11 @@
 
 ## 👤 Team Members and Roles
 
-| Member Name          | Role                              | Responsibilities                                             |
+| Member Name          | Role                               | Responsibilities                                             |
 |----------------------|------------------------------------|--------------------------------------------------------------|
 | Juliana Ndunge       | Team Leader & Test Strategist      | Oversees entire testing process, GitHub Projects, submission |
-| Less     | Functional Tester & UI Validator   | Executes manual tests, reports functional/UI issues          |
-| Tidimalo     | Defect Analyst & Documentation Lead| Maintains defect logs, writes documentation and reports       |
+| Lester Odhiambo      | Functional Tester & UI Validator   | Executes manual tests, reports functional/UI issues          |
+| Tidimalo Motsepe     | Defect Analyst & Documentation Lead| Maintains defect logs, writes documentation and reports      |
 
 ---
 
@@ -39,7 +39,7 @@
 - **Tidimalo**:
   - Help research tools for testing environments
   - Begin reviewing CleanCity features
-- **Less**:
+- **Lester**:
   - Create and document `test_env.md` (test environments)
   - Draft `team_roles.md` file
   - Assist in outlining `test-plan.md`
@@ -64,7 +64,7 @@
 - **Tidimalo**:
   - Write and execute early test cases
   - Log functional/UI issues in `defect-log.md`
-- **Less**:
+- **Lester**:
   - Maintain `test-cases.md` with proper format
   - Update `defect-log.md` regularly
   - Document challenges or tool usage issues
@@ -86,7 +86,7 @@
   - Compile `final-report.md`
   - Record video presentation
   - Submit final Google Drive links
-- **Less**:
+- **Lester**:
   - Complete final round of manual testing
   - Retest and confirm fixes
   - Provide walkthrough for the video
