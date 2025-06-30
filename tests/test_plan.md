@@ -16,7 +16,7 @@
 |-------------------|------------------------------|------------------|
 | Juliana    | Team Lead, Coordinator       | GitHub setup, planning, reporting, review |
 | Less  | Functional & UI Tester       | Test cases, bug reporting, screenshots |
-| Tidimalo   | Accessibility & UX Specialist | A11y testing, mobile/responsive checks, usability |
+| Tidimalo   | Accessibility & UX Specialist | Accessibility testing, mobile/responsive checks, usability |
 
 ---
 
