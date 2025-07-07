@@ -38,7 +38,9 @@ Run with coverage:
 > jest
 
 PASS tests/utils/dataService.test.js
+
 dataService - Pickup Requests
+
 ✓ should return all pickup requests (5 ms)
 ✓ should add a new pickup request (1 ms)
 ✓ should update request status (1 ms)
