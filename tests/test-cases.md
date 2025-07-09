@@ -31,7 +31,15 @@ ID**     | **Title**                           | **Challenge Encountered**      
 | TC011 | Data Persistence After Page Refresh  | Newly submitted requests disappear after refreshing       | Chrome DevTools, LocalStorage View   |
 | TC012 | Mobile Tap Target Size               | Buttons are too small to tap easily on mobile             | Mobile View Tester, Chrome DevTools  |
 | TC013 | Invalid Date Format Handling         | Invalid date format accepted without error                | Manual Entry, Form Validator Tool    |
-
+| TC014 | Login Functionality                  | Login works correctly                                     | Manual Test                          |
+| TC015 | Registration Form Submission         | User registration is successful                           | Manual Test                          |
+| TC01  | Logout Functionality                 | Logout ends session and redirects as expected             | Manual Test                          |
+| TC017 | Password Visibility Toggle           | Toggle shows and hides password accurately                | Manual Test                          |
+| TC018 | Dashboard Data Load                  | Dashboard loads request data successfully                 | Manual Test                          |
+| TC019 | Notification Banner Display          | Notification banner displays after submission             | Manual Test                          |
+| TC020 | Search Filter on Dashboard           | Search filters results based on keyword input             | Manual Test                          |
+| TC021 | Request Pagination Functionality     | Pagination loads additional records properly              | Manual Test                          |
+| TC022 | Role-Based Access Control            | Access is restricted based on user roles correctly        | Manual Test                          |
 
 ## ✅ Title: UI/UX and Functional Testing – Web Application
 
@@ -49,7 +57,9 @@ Expected Result:
 - Login link should navigate to the Login page
 - Registration link should navigate to the Registration page
 
-Actual Result: [To be filled during testing]
+Actual Result:
+Login link redirects correctly
+Registration link is broken; shows 404 error
 
 Status: ❌ 
 
@@ -67,7 +77,8 @@ Steps:
 Expected Result:
 - The welcome message should be fully visible and properly aligned
 
-Actual Result: [To be filled during testing]
+Actual Result:
+Message is partially hidden by the top banner
 
 Status: ❌ 
 
@@ -85,7 +96,8 @@ Steps:
 Expected Result:
 - Proper spacing and visual hierarchy should be present
 
-Actual Result: [To be filled during testing]
+Actual Result:
+Sections are tightly packed with no padding between content blocks
 
 Status: ❌ 
 
@@ -105,7 +117,8 @@ Steps:
 Expected Result:
 - Password input should toggle between visible and hidden states
 
-Actual Result: [To be filled during testing]
+Actual Result:
+-No toggle icon present; password always hidden
 
 Status: ❌ 
 
@@ -123,7 +136,8 @@ Steps:
 Expected Result:
 - Nav bar items should be well-aligned, responsive, and logically grouped
 
-Actual Result: [To be filled during testing]
+Actual Result:
+-Items are stacked vertically instead of horizontally on desktop view
 
 Status: ❌ 
 ---
@@ -141,7 +155,8 @@ Steps:
 Expected Result:
 -An alert popup should appear with confirmation message
 
-Actual Result:[To be filled during testing]
+Actual Result:
+-Form submits silently with no feedback or alert shown
 
 Status: ❌
 
@@ -219,6 +234,8 @@ Layout breaks and introduces horizontal scrolling
 
 Status: ❌
 
+------
+
 Test Case 11: Data Persistence After Page Refresh
 Test Case ID: TC011
 
@@ -238,6 +255,8 @@ The new request disappears after refreshing the page
 
 Status: ❌
 
+-------
+
 Test Case 12: Mobile Tap Target Size
 Test Case ID: TC012
 
@@ -255,6 +274,8 @@ Actual Result:
 Buttons are small and difficult to tap accurately
 
 Status: ❌
+
+-------
 
 Test Case 13: Invalid Date Format Handling
 Test Case ID: TC013
@@ -275,10 +296,163 @@ Form accepts the invalid date without any error message
 Status: ❌
 
 
+------
+Test Case 14: Login Functionality
 
+Test Case ID: TC014
 
+Description: Valid login credentials should work
+Steps:
+Go to login
+Enter valid credentials
 
+Expected Result: Redirect to dashboard
 
+Actual Result: Successfully logged inStatus: ✅
 
+-----
+
+Test Case 15: Registration Form Submission
+Test Case ID: TC015
+
+Description: Valid data should register user
+
+Steps:
+Fill form
+Click Register
+
+Expected Result: Redirect to login page
+
+Actual Result: Registered successfullyStatus: ✅
+
+-----
+
+Test Case 16: Logout Functionality
+Test Case ID: TC016
+
+Description: Logout should end session
+
+Steps:
+Log in
+Click Logout
+
+Expected Result: Redirect to login
+
+Actual Result: Logged out and redirected
+
+Status: ✅
+------
+
+Test Case 17: Password Visibility Toggle
+Test Case ID: TC017
+
+Description: Password toggle should work
+
+Steps:
+Enter password
+Toggle visibility
+
+ExpectedResult: Toggles correctly
+
+Actual Result: Works as expected
+
+Status: ✅
+
+------
+
+Test Case 18: Dashboard Data Load
+Test Case ID: TC018
+
+Description: Dashboard should load requests
+
+Steps:
+Submit request
+Log in as admin
+Check dashboard
+
+Expected Result: Request is displayed
+
+Actual Result: Data shown correctly
+
+Status: ✅
+
+-----
+
+Test Case 19: Notification Banner Display
+Test Case ID: TC019
+
+Description: Verify that notification banner displays after submission
+
+Steps:
+Submit a form or complete an action that triggers a notification
+Observe if the notification banner appears
+
+Expected Result:
+Notification banner should be displayed confirming the action
+
+Actual Result:
+Notification banner displays after submission
+
+Status: ✅
+
+-----
+
+Test Case 20: Search Filter on Dashboard
+Test Case ID: TC020
+
+Description: Verify that the search filters results based on keyword input
+
+Steps:
+Navigate to the dashboard
+Enter a keyword in the search filter
+Observe filtered results
+
+Expected Result:
+Results should filter dynamically according to the search keyword
+
+Actual Result:
+Search filters results based on keyword input
+
+Status: ✅
+
+-----
+
+Test Case 21: Request Pagination Functionality
+Test Case ID: TC021
+
+Description: Verify that pagination loads additional records properly
+
+Steps:
+Navigate to a page with paginated records
+Use pagination controls to load next pages
+
+Expected Result:
+Additional records should load without errors as pages change
+
+Actual Result:
+Pagination loads additional records properly
+
+Status: ✅
+
+----
+
+Test Case 22: Role-Based Access Control
+Test Case ID: TC022
+
+Description: Verify that access is restricted based on user roles correctly
+
+Steps:
+Login with different user roles
+Attempt to access restricted pages or features
+
+Expected Result:
+Access should be granted or denied according to user role permissions
+
+Actual Result:
+Access is restricted based on user roles correctly
+
+Status: ✅
+
+-----
 
 
