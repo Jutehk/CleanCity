@@ -5,18 +5,181 @@
 **Testers**: Tidimalo Motsepe  
 **Test Period**: 3 July 2025 – 9 July 2025  
 
-This file documents all discovered issues during QA testing.
+# 🐞 Defect Log
 
-| Bug ID  | Title                                   | Related Test Case | Priority | Severity | Status | Description                                                                 |
-|---------|-----------------------------------------|-------------------|----------|----------|--------|-----------------------------------------------------------------------------|
-| BUG001  | Submit button not working               | TC006             | High     | Major    | Open   | Submit button does not trigger confirmation alert.                          |
-| BUG002  | Layout breaks on Windows laptop         | TC002             | Medium   | Major    | Open   | Layout shifts and elements overlap on homepage.                             |
-| BUG003  | Missing field validation                | TC007             | High     | Major    | Open   | Required fields submit without showing validation errors.                   |
-| BUG004  | Incorrect date format accepted          | TC013             | Medium   | Major    | Open   | Allows input of wrong date format (e.g., 13-07-25).                         |
-| BUG005  | Dropdown menu not working               | TC005             | Medium   | Major    | Open   | Location dropdown fails to expand when clicked.                             |
-| BUG006  | Image upload fails silently             | TC006             | High     | Major    | Open   | Upload field fails with no feedback or confirmation.                        |
-| BUG007  | Page reload clears form                 | TC011             | Low      | Minor    | Open   | Reloading the page clears all form data with no warning.                    |
-| BUG008  | Submit button not disabled              | TC007             | Medium   | Major    | Open   | Submit button remains active even with invalid/empty fields.                |
-| BUG009  | Success message not localized           | TC009             | Low      | Minor    | Open   | Confirmation message not translated to selected language.                   |
-| BUG010  | Map not loading on form page            | TC005             | High     | Major    | Open   | Embedded map does not load on the form page.                                |
-|BUG011 |Awareness page layout issues               | TC003             |Medium    | Major    | open   | Sections on the Awareness page are tightly packed with no                                                                                                          padding between content blocks, causing poor visual                                                                                                                 hierarchy and readability.
+This defect log is used to record, track, and manage all known bugs identified during the UI/UX and functional testing phase of the CleanCity Web Application. Each defect includes information such as reproduction steps, severity, and current status to assist the development team in effective debugging and resolution.
+
+---
+
+## 🔧 Defect Entries
+
+---
+
+### 🔹 Bug ID: BUG001
+- Summary: Broken Registration Link  
+- Date Logged: 2025-07-09  
+- Affected Feature: Login/Register Navigation  
+- Steps to Reproduce:  
+  1. Open the homepage  
+  2. Click on the "Register" link  
+- Expected vs Actual Result:  
+  Expected: Redirects to the Registration page  
+  Actual: 404 error page displayed  
+- Severity: Major  
+- Priority: High  
+- Environment: Chrome v114, Windows 10  
+- Status: Open  
+ 
+
+---
+
+### 🔹 Bug ID: BUG002
+- Summary: Welcome Message Hidden  
+- Date Logged: 2025-07-09  
+- Affected Feature: Dashboard UI  
+- Steps to Reproduce:  
+  1. Log in using valid credentials  
+  2. Observe welcome banner location  
+- Expected vs Actual Result:  
+  Expected: Welcome message fully visible and centered  
+  Actual: Hidden behind top banner  
+- Severity: Minor  
+- Priority: Medium  
+- Environment: Firefox v124, Ubuntu 22.04  
+- Status: In Review  
+
+---
+
+### 🔹 Bug ID: BUG003
+- Summary: Awareness Page Layout Overlap  
+- Date Logged: 2025-07-09  
+- Affected Feature: Awareness Page  
+- Steps to Reproduce:  
+  1. Navigate to the Awareness page  
+- Expected vs Actual Result:  
+  Expected: Spacing between content blocks  
+  Actual: Tightly packed elements with no padding  
+- Severity: Cosmetic  
+- Priority: Low  
+- Environment: Chrome v114, macOS Ventura  
+- Status: Open  
+ 
+
+---
+
+### 🔹 Bug ID: BUG004
+- Summary: Password Toggle Missing  
+- Date Logged: 2025-07-09  
+- Affected Feature: Registration Page  
+- Steps to Reproduce:  
+  1. Navigate to Registration  
+  2. Check password input field  
+- Expected vs Actual Result:  
+  Expected: Show/Hide password icon present  
+  Actual: Toggle icon is missing; password always hidden  
+- Severity: Major  
+- Priority: High  
+- Environment: Chrome v114, Android 12  
+- Status: Open  
+
+
+---
+
+### 🔹 Bug ID: BUG005
+- Summary: Vertical Admin Nav on Desktop  
+- Date Logged: 2025-07-09  
+- Affected Feature: Admin Navigation Bar  
+- Steps to Reproduce:  
+  1. Log in as admin  
+  2. Inspect navbar layout  
+- Expected vs Actual Result:  
+  Expected: Items displayed horizontally and logically grouped  
+  Actual: Items stacked vertically  
+- Severity: Major  
+- Priority: Medium  
+- Environment: Edge v118, Windows 11  
+- Status: Open  
+
+---
+
+### 🔹 Bug ID: BUG006
+- Summary: Filter Count Inaccuracy  
+- Date Logged: 2025-07-09  
+- Affected Feature: Status + City Filters  
+- Steps to Reproduce:  
+  1. Apply "Scheduled" and "Nairobi" filters  
+- Expected vs Actual Result:  
+  Expected: Shows only exact matches; correct count  
+  Actual: Mix of unrelated results; count incorrect or missing  
+- Severity: Critical  
+- Priority: High  
+- Environment: Chrome v114, Linux Mint  
+- Status: Open  
+
+---
+### 🔹 Bug ID: BUG007
+- Summary: Accepts Weak Passwords  
+- Date Logged: 2025-07-09  
+- Affected Feature: Registration Validation  
+- Steps to Reproduce:  
+  1. Enter weak password  
+  2. Click submit  
+- Expected vs Actual Result:  
+  Expected: Rejected with specific error messages  
+  Actual: All passwords accepted  
+- Severity: Major  
+- Priority: High  
+- Environment: Safari v16, iPhone 13  
+- Status: Open  
+
+
+---
+
+### 🔹 Bug ID: BUG008
+- Summary: Email Prefix Not Enforced  
+- Date Logged: 2025-07-09  
+- Affected Feature: Email Field (Registration)  
+- Steps to Reproduce:  
+  1. Enter email without user_ or admin_ prefix  
+- Expected vs Actual Result:  
+  Expected: Error message appears  
+  Actual: Accepts non-prefixed emails  
+- Severity: Major  
+- Priority: Medium  
+- Environment: Chrome v114, Windows 10  
+- Status: Open  
+
+
+---
+
+### 🔹 Bug ID: BUG009
+- Summary: Invalid Email Format Accepted  
+- Date Logged: 2025-07-09  
+- Affected Feature: Registration Email Field  
+- Steps to Reproduce:  
+  1. Enter email like !@#$$@cleancity.com  
+- Expected vs Actual Result:  
+  Expected: Rejected as invalid  
+  Actual: Accepted without error  
+- Severity: Major  
+- Priority: Medium  
+- Environment: Firefox v124, Ubuntu 22.04  
+- Status: Open  
+ 
+
+---
+
+### 🔹 Bug ID: BUG010
+- Summary: Filter Count Not Updating  
+- Date Logged: 2025-07-09  
+- Affected Feature: Dashboard Filters  
+- Steps to Reproduce:  
+  1. Apply status and city filters  
+  2. Observe count updates  
+- Expected vs Actual Result:  
+  Expected: Filter count adjusts instantly  
+  Actual: Count doesn't change or disappears  
+- Severity: Major  
+- Priority: Medium  
+- Environment: Chrome v114, macOS Monterey  
+- Status: In Review  
