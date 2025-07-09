@@ -15,34 +15,28 @@ To validate that the waste pickup scheduling system correctly assigns collection
 Ensure the application reliably schedules waste pickups, minimizes collection inefficiencies, and delivers timely service updates to maintain clean neighborhoods and satisfied customers.
 
 ```
-| **Test Case 
-ID**     | **Title**                           | **Challenge Encountered**                                 | **Tools/Tech Used**                  |
-| ---------------------------------------------|-----------------------------------------------------------|--------------------------------------|  
-| TC001 | Login and Registration Link Redirect | Links not redirecting to the Login and Registration pages | Browser Dev Tools, Click Tracking    |
-| TC002 | Welcome Message Visibility           | Welcome message is only partially visible                 | Browser Inspector, UI Snapshot Tool  |
-| TC003 | Awareness Page Layout                | No spacing/gap between layout sections                    | Chrome DevTools, CSS Grid Inspector  |
-| TC004 | Password Field Visibility Toggle     | Show/hide toggle not implemented                          | Manual UI Interaction, HTML Review   |
-| TC005 | Admin Navigation Bar Layout          | Navigation bar items not properly organized or aligned    | Browser Dev Tools, Responsive Tester |
-| TC006 | Submit Request Button Not Alerting   |  Suspected that event handler is not attached properly    | Selenium WebDriver                   |
-| TC007 | Feedback Button Disabled Until Valid | Button remains clickable even when fields are empty       | Form Tester, Browser Dev Tools       |
-| TC008 | Missing Confirmation in Admin Panel  | Status updates occur without a confirmation prompt        | Manual UI Interaction, DevTools      |
-| TC009 | Success Message Visibility           | Success message disappears too quickly after submission   | Manual Testing, Timer Plugin         |
-| TC010 | Long Text Input Handling             | Long input causes layout to break and horizontal scroll   | Browser Inspector, Responsive Mode   |
-| TC011 | Data Persistence After Page Refresh  | Newly submitted requests disappear after refreshing       | Chrome DevTools, LocalStorage View   |
-| TC012 | Mobile Tap Target Size               | Buttons are too small to tap easily on mobile             | Mobile View Tester, Chrome DevTools  |
-| TC013 | Invalid Date Format Handling         | Invalid date format accepted without error                | Manual Entry, Form Validator Tool    |
-| TC014 | Login Functionality                  | Login works correctly                                     | Manual Test                          |
-| TC015 | Registration Form Submission         | User registration is successful                           | Manual Test                          |
-| TC01  | Logout Functionality                 | Logout ends session and redirects as expected             | Manual Test                          |
-| TC017 | Password Visibility Toggle           | Toggle shows and hides password accurately                | Manual Test                          |
-| TC018 | Dashboard Data Load                  | Dashboard loads request data successfully                 | Manual Test                          |
-| TC019 | Notification Banner Display          | Notification banner displays after submission             | Manual Test                          |
-| TC020 | Search Filter on Dashboard           | Search filters results based on keyword input             | Manual Test                          |
-| TC021 | Request Pagination Functionality     | Pagination loads additional records properly              | Manual Test                          |
-| TC022 | Role-Based Access Control            | Access is restricted based on user roles correctly        | Manual Test                          |
+| **Test Case
+
+| **Test Case ID** | **Title**                             | **Challenge Encountered**                                          | **Tools/Tech Used*         |
+|------------------|---------------------------------------|-----------------------------------------------------------------   |-----------------------------
+| TC001            | Login and Registration Redirect       | Registration link is broken; shows 404 error                       | Browser Dev Tools, Click Tracking
+| TC002            | Welcome Message Visibility            | Welcome message partially hidden by top banner                     | Browser Inspector           
+| TC003            | Awareness Page Layout                 | Sections are tightly packed; no padding between content blocks     | Chrome DevTools, CSS Grid 
+| TC004            | Password Visibility Toggle            | No toggle icon; password always hidden                             | Manual UI Interaction, HTML 
+| TC005            | Admin Navigation Bar Layout           | Items stacked vertically instead of horizontally                   | Browser Dev Tools, Responsi
+| TC006            | Registration Form Submission          | All expected outcomes occurred; registration successful            | Manual Test                 
+| TC007            | Registration Form Validation          | All validation messages appear correctly                           | Manual Test                 
+| TC008            | Combined Filters                      | Filters show incorrect data; filter count is wrong or missing      | Manual Test, Dev Tools      
+| TC009            | Filter Count Accuracy                 | Filter count doesn't update or shows wrong numbers                 | Manual Testing              
+| TC010            | Login Authentication                  | Login works as expected                                            | Manual Test                
+| TC011            | Form Validation (General)             | Error messages shown; form blocked as expected                     | Manual Test                 
+| TC012            | Password Complexity Enforcement       | Accepts weak passwords without any validation                      | Manual Test                 
+| TC013            | Password Confirmation Matching        | Rejects mismatched passwords with proper error                     | Manual Test                
+| TC014            | Unrestricted Email Acceptance         | Accepts all email formats including invalid ones                   | Manual Test                 
+| TC015            | Prefix Requirement                    | Accepts emails without required 'user_' or 'admin_' prefix         | Manual Test                
+| TC016            | Role-Based Dashboard Routing          | Routes admin/user to correct dashboards with respective UI element | Manual Test                           |                                                                                                                                  
 
 ## ✅ Title: UI/UX and Functional Testing – Web Application
-
 ## Test Case 1: Login and Registration Link Redirect
 Test Case ID: TC001
 
@@ -62,6 +56,8 @@ Login link redirects correctly
 Registration link is broken; shows 404 error
 
 Status: ❌ 
+evidence
+
 
 ---
 
@@ -140,319 +136,245 @@ Actual Result:
 -Items are stacked vertically instead of horizontally on desktop view
 
 Status: ❌ 
----
 
-## Test Case 6:Submit Request Button Not Showing Alert
+----
+
+Test Case 6: Registration Form Submission
 Test Case ID: TC006
 
-Description:the behavior of the "Submit Request" button when clicked, specifically checking whether it shows the expected alert message.
+Description: Verify new users can successfully register through the form
 
 Steps:
-1. Navigate to the form page
-2. Fill in required fields
-3. Click "Submit Request" button
+Manually navigate to /register
+Enter valid details:
+Name: "Test User"
+Email: "testuser@domain.com"
+Password: "TestPass123"
+Click "Create Account"
 
 Expected Result:
--An alert popup should appear with confirmation message
+Success message appears
+Redirects to login page
+New user appears in localStorage
 
 Actual Result:
--Form submits silently with no feedback or alert shown
-
-Status: ❌
-
-Test Case 7: Feedback Button Disabled Until Valid
-Test Case ID: TC007
-
-Description:
-Ensure that the "Submit Feedback" button remains disabled until all required fields are valid.
-
-Steps:
-Navigate to the Feedback page
-Leave all fields empty
-Check if the "Submit Feedback" button is clickable
-
-Expected Result:
-The button should remain disabled until all fields are filled and valid
-
-Actual Result:
-Button remains clickable even when form is incomplete
-
-Status: ❌
-
-Test Case 8: Missing Confirmation in Admin Panel
-Test Case ID: TC008
-
-Description:
-Verify if a confirmation prompt appears before updating the status of a request in the Admin panel.
-
-Steps:
-Navigate to the Admin panel
-Click the "Mark as Scheduled" button
-
-Expected Result:
-A confirmation dialog should appear before updating the status
-
-Actual Result:
-Status updates instantly without any confirmation prompt
-
-Status: ❌
-
-Test Case 9: Success Message Visibility
-Test Case ID: TC009
-
-Description:
-Check if the success message after form submission remains visible for at least 3 seconds.
-
-Steps:
-Submit a valid request form
-Observe the visibility duration of the success message
-
-Expected Result:
-Success message should appear and remain visible for 3+ seconds
-
-Actual Result:
-Message disappears after approximately 1 second
-
-Status: ❌
-
-Test Case 10: Long Text Input Handling
-Test Case ID: TC010
-
-Description:
-Validate that long text input does not break the page layout or cause horizontal scrolling.
-
-Steps:
-Navigate to a form with a text input
-Enter 500+ characters
-Observe layout behavior
-
-Expected Result:
-Text input should be handled gracefully without breaking layout
-
-Actual Result:
-Layout breaks and introduces horizontal scrolling
-
-Status: ❌
-
-------
-
-Test Case 11: Data Persistence After Page Refresh
-Test Case ID: TC011
-
-Description:
-Ensure that submitted request data persists even after a page refresh.
-
-Steps:
-Submit a new request
-Navigate to Dashboard
-Refresh the page
-
-Expected Result:
-The newly submitted request should still be visible
-
-Actual Result:
-The new request disappears after refreshing the page
-
-Status: ❌
-
--------
-
-Test Case 12: Mobile Tap Target Size
-Test Case ID: TC012
-
-Description:
-Verify that all buttons meet the minimum tap target size on mobile devices.
-
-Steps:
-Open the app in mobile view
-Try tapping on all interactive buttons
-
-Expected Result:
-All buttons should be large enough and easy to tap
-
-Actual Result:
-Buttons are small and difficult to tap accurately
-
-Status: ❌
-
--------
-
-Test Case 13: Invalid Date Format Handling
-Test Case ID: TC013
-
-Description:
-Check if the system correctly rejects an invalid date format in the input field.
-
-Steps:
-Enter an invalid date format like "32/13/2025"
-Try to submit the form
-
-Expected Result:
-An error should be displayed for the invalid date format
-
-Actual Result:
-Form accepts the invalid date without any error message
-
-Status: ❌
-
-
-------
-Test Case 14: Login Functionality
-
-Test Case ID: TC014
-
-Description: Valid login credentials should work
-Steps:
-Go to login
-Enter valid credentials
-
-Expected Result: Redirect to dashboard
-
-Actual Result: Successfully logged inStatus: ✅
-
------
-
-Test Case 15: Registration Form Submission
-Test Case ID: TC015
-
-Description: Valid data should register user
-
-Steps:
-Fill form
-Click Register
-
-Expected Result: Redirect to login page
-
-Actual Result: Registered successfullyStatus: ✅
-
------
-
-Test Case 16: Logout Functionality
-Test Case ID: TC016
-
-Description: Logout should end session
-
-Steps:
-Log in
-Click Logout
-
-Expected Result: Redirect to login
-
-Actual Result: Logged out and redirected
-
-Status: ✅
-------
-
-Test Case 17: Password Visibility Toggle
-Test Case ID: TC017
-
-Description: Password toggle should work
-
-Steps:
-Enter password
-Toggle visibility
-
-ExpectedResult: Toggles correctly
-
-Actual Result: Works as expected
-
-Status: ✅
-
-------
-
-Test Case 18: Dashboard Data Load
-Test Case ID: TC018
-
-Description: Dashboard should load requests
-
-Steps:
-Submit request
-Log in as admin
-Check dashboard
-
-Expected Result: Request is displayed
-
-Actual Result: Data shown correctly
-
-Status: ✅
-
------
-
-Test Case 19: Notification Banner Display
-Test Case ID: TC019
-
-Description: Verify that notification banner displays after submission
-
-Steps:
-Submit a form or complete an action that triggers a notification
-Observe if the notification banner appears
-
-Expected Result:
-Notification banner should be displayed confirming the action
-
-Actual Result:
-Notification banner displays after submission
-
-Status: ✅
-
------
-
-Test Case 20: Search Filter on Dashboard
-Test Case ID: TC020
-
-Description: Verify that the search filters results based on keyword input
-
-Steps:
-Navigate to the dashboard
-Enter a keyword in the search filter
-Observe filtered results
-
-Expected Result:
-Results should filter dynamically according to the search keyword
-
-Actual Result:
-Search filters results based on keyword input
-
-Status: ✅
-
------
-
-Test Case 21: Request Pagination Functionality
-Test Case ID: TC021
-
-Description: Verify that pagination loads additional records properly
-
-Steps:
-Navigate to a page with paginated records
-Use pagination controls to load next pages
-
-Expected Result:
-Additional records should load without errors as pages change
-
-Actual Result:
-Pagination loads additional records properly
+Account created successfully
+Redirects to login page as expected
 
 Status: ✅
 
 ----
 
-Test Case 22: Role-Based Access Control
-Test Case ID: TC022
+##Test Case 7: Registration Form Validation
+Test Case ID: TC005
 
-Description: Verify that access is restricted based on user roles correctly
+Description: Verify all field validations work correctly
 
 Steps:
-Login with different user roles
-Attempt to access restricted pages or features
+-Submit empty registration form
+-Enter invalid email ("invalid-email")
+-Enter mismatched passwords ("Pass1", "Pass2")
 
 Expected Result:
-Access should be granted or denied according to user role permissions
+"Name/Email/Password required" errors
+"Enter valid email" error
+"Passwords don't match" error
 
 Actual Result:
-Access is restricted based on user roles correctly
+All validation messages appear correctly
 
 Status: ✅
 
------
+----
 
+Test Case 8: Combined Status and City Filters
+Test Case ID: TC008
 
+Description: Verify filters work together using AND logic and display correct counts
+
+Steps:
+Select "Scheduled" in status filter
+Select "Nairobi" in city filter
+
+Expected Result:
+Only shows requests that are BOTH:
+Status = "Scheduled"
+City = "Nairobi"
+Filter count shows "Showing [correct number] of [total] requests"
+Clear visual indication of both active filters
+
+Actual Result:
+Shows incorrect mix of statuses
+Includes requests from other cities
+
+Filter count either:
+Missing completely
+Showing wrong numbers (e.g., "Showing 5 of 8" when only 2 should match)
+Not updating when filters change
+
+Status: ❌
+
+----
+
+Test Case 9: Filter Count Accuracy
+Test Case ID: TC009
+
+Description: Verify the filter count updates correctly for combined filters
+
+Steps:
+Note total request count (e.g., "12 total requests")
+Apply "Pending" status filter
+Observe count (e.g., "Showing 4 of 12")
+Add "Kisumu" city filter
+Observe updated count
+
+Expected Result:
+Initial count shows correct filtered subset
+Count updates immediately when adding second filter
+Final count reflects exact AND matches
+Format: "Showing [filtered count] of [total count]"
+
+Actual Result:
+Count either:
+Doesn't appear at all
+shows wrong numbers
+Doesn't update when adding second filter
+
+May show "Showing 0 of 0" when matches exist
+
+Status: ❌
+
+----
+Test Case 10: Login Authentication
+Test Case ID: TC010
+
+Description: Validate system authenticates users with correct credentials
+
+Steps:
+Enter valid email/password
+Click "Sign In"
+
+Expected:
+Successful redirect to dashboard
+Session established
+Welcome message displays
+
+Status:  ✅
+----
+
+## Test Case 11: Form Validation
+Test Case ID: TC011
+
+Description: Verify field validation rules for all inputs.  
+Steps:  
+ Submit empty form  
+ Enter invalid date (32/13/2025)  
+Test other invalid inputs (e.g., special characters in name field)  
+Expected:  
+- Specific error messages for each invalid field (e.g., "Date is invalid")  
+- Form submission blocked until corrections are made  
+Actual:  
+- Correct error messages appear for all invalid inputs  
+- Submission is blocked as expected  
+**Status**: ✅ 
+
+----
+## Test Case 12: Form Validation
+Test Case ID: TC012
+TC012: Password Complexity Enforcement
+
+Description: Verify system enforces minimum password requirements (8+ chars, 1 uppercase, 1 number).
+
+Steps:
+Navigate to registration page
+Attempt to submit with:
+weak (too short) → Error
+nocomplexity (no numbers/uppercase) → Error
+validPass123 (meets rules) → Accepted
+
+Expected:
+Blocks weak passwords with specific error messages
+Accepts compliant passwords
+
+Actual:
+Accepts all passwords without validation
+Status: ❌
+----
+
+## Test Case 13: Password Confirmation Matching
+Test Case ID: TC013
+
+Description: Ensure "Confirm Password" field matches the original.
+
+Steps:
+Enter Test123! in Password field
+Enter Test123 in Confirm Password
+Submit form
+
+Expected:
+Blocks submission with "Passwords do not match" error
+
+Actual:
+Rejects  mismatched passwords
+Get an error message 
+Status:✅ 
+
+----
+## Test Case 14:  Unrestricted Email Acceptance
+Test Case ID : TC014
+
+Description: Verify system currently accepts any email format
+
+Steps:
+Attempt registration with:
+test@gmail.com
+12345@yahoo.com
+!@#$%@cleancity.com
+Observe results
+
+Expected: Should reject all
+
+Actual: Accepts all email formats
+Status: ❌
+---
+## Test Case 15: Prefix Requirement
+TC015: Prefix Requirement
+Description: Validate user_/admin_ prefix rule
+
+Steps:
+Register with:
+regular@cleancity.com
+support@cleancity.com
+
+Expected: Reject with "Email must start with user_ or admin_"
+
+Actual: Accepts non-prefixed emails
+
+Status: ❌
+
+----
+
+##Test Case 16: Role-Based Dashboard Routing
+Test Case ID: TC016
+
+Description: Verify system routes users to correct dashboards based on email prefixes.
+
+Steps:
+Log in with admin_test@cleancity.com
+Observe redirect location
+Check for admin-specific elements
+Log out
+Log in with user_test@cleancity.com
+Observe redirect location
+Check for user-specific elements
+
+Expected:
+Admin prefix redirects to /admin-dashboard with admin tools
+User prefix redirects to /user-dashboard with user features
+
+Actual:
+Correctly routes admin to admin dashboard
+Correctly routes user to user dashboard
+Appropriate UI elements visible for each role
+
+Status: ✅
