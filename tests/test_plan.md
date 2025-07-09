@@ -76,6 +76,9 @@
 | GitHub Projects     | Task & defect tracking |
 | Chrome DevTools     | Debugging, mobile view |
 | Lighthouse          | Performance & A11y testing |
+| Jest                | Unit testing |
+| Selenium            | UI & navigation automation |
+| Cypress             |Form, E2E, UI behavior testing |
 | axe DevTools (later)| Accessibility validation |
 | Screen Recorder     | Demo bugs in video |
 | Google Docs/Drive   | Optional collab & backup |
@@ -118,13 +121,14 @@ Each bug will include:
 ### 🔄 Week 2 (In Progress)
 - [ ] `test-cases.md`
 - [ ] `defect-log.md`
-- [ ] Manual testing begins
+- [ ] Manual and Automated testing begins
 
 ### 📤 Week 3
 - [ ] Final test execution
 - [ ] All issues documented
 - [ ] `final-report.md` written
 - [ ] Video presentation recorded
+- [ ] Pdf Report
 
 ---
 
