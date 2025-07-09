@@ -56,7 +56,7 @@ Login link redirects correctly
 Registration link is broken; shows 404 error
 
 Status: ❌ 
-evidence
+
 
 
 ---
