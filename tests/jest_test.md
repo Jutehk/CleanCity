@@ -32,6 +32,8 @@ Run with coverage:
 
 ````
 
+```
+
 ## ✅ Actual Test Results
 
 > cleancity-waste-scheduler@1.0.0 test
@@ -59,3 +61,6 @@ Tests: 9 passed, 9 total
 Snapshots: 0 total  
 Time: 1.065 s  
 Ran all test suites.
+
+
+```
