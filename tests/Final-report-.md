@@ -12,7 +12,27 @@
 This report summarizes the quality assurance efforts conducted by Team Espada for the CleanCity web application. Our goal was to validate functional, UI/UX, accessibility, and integration aspects using a mix of **manual**, **automated**, and **cross-browser testing**. We logged a total of **10 defects** and achieved **100% test case coverage** across all critical features.
 
 ---
+## 📑 Table of Contents
+1. [Executive Summary](#-executive-summary)
+2. [Team Information](#-team-information)
+3. [Testing Objectives](#-testing-objectives)
+4. [Test Approach](#-test-approach)
+5. [Test Environment](#-test-environment)
+6. [Entry and Exit Criteria](#-entry-and-exit-criteria)
+7. [Testing Schedule](#-testing-schedule)
+8. [Scope Definition](#-scope-definition)
+9. [Test Case Summary](#-test-case-summary)
+10. [Test Metrics and Results](#-test-metrics-and-results)
+11. [Risk Analysis](#-risk-analysis)
+12. [Detailed Defect Report](#-detailed-defect-report)
+13. [Automated Testing Summary](#-automated-testing-summary)
+14. [Lighthouse Audit Summary](#-lighthouse-audit-report)
+15. [Lessons Learned](#-lessons-learned)
+16. [Evidence and Attachments](#-evidence-and-attachments)
+17. [Conclusion and Recommendations](#-conclusion)
+18. [Appendices](#-appendices)
 
+---
 ## 👥 Team Members
 
 | Name             | Role                         |
@@ -115,6 +135,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 
 ---
 
+
 ## 🐞 Defects Summary
 
 - Total Defects Logged: **10**
@@ -154,12 +175,34 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 
 ---
 
+## 🎓 Lessons Learned
+
+- Using GitHub Kanban improved coordination and visibility of testing tasks.
+- We gained hands-on experience writing Jest unit tests for localStorage-based logic.
+- Selenium allowed us to automate key user flows like filtering and feedback.
+- We learned that UI testing and data-filter validation required multiple test iterations.
+- Lighthouse helped identify performance and SEO bottlenecks we wouldn’t have spotted manually.
+
+---
+
 ## 📝 Conclusion
 
 The CleanCity application successfully passed unit and integration-level testing using Jest and Selenium. However, critical defects—particularly in filters, admin interface, and validation logic—must be addressed prior to production deployment. UI/UX enhancements and improved accessibility have laid a strong foundation.
 
 > **Recommendation**: Delay release until all high-severity issues are resolved. Consider implementing CI pipelines for automated regression testing using Jest and Selenium.
 
+---
+
+## 📎 Appendices
+
+- [Test Plan](./tests/test-plan.md)
+- [Test Cases](./tests/test-cases.md)
+- [Defect Log](./tests/defect-log.md)
+- [Jest Tests](./tests/utils/dataService.test.js)
+- [Selenium Scripts](./tests/selenium/)
+- [Screenshots](./tests/screenshots/)
+- [Lighthouse HTML Report](./tests/lighthouse/lighthouse-report.html)
+- [GitHub Project Board (Kanban)](https://github.com/your-team-name/cleancity/projects/1)
 ---
 
 **Prepared By:**  
