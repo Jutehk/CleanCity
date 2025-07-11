@@ -24,7 +24,7 @@ This defect log is used to record, track, and manage all known bugs identified d
   2. Click on the "Register" link  
 - Expected vs Actual Result:  
   Expected: Redirects to the Registration page  
-  Actual: 404 error page displayed  
+  Actual: Redirects to login page
 - Severity: Major  
 - Priority: High  
 - Environment: Chrome v114, Windows 10  
@@ -161,7 +161,7 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Date Logged: 2025-07-09  
 - Affected Feature: Registration Email Field  
 - Steps to Reproduce:  
-  1. Enter email like !@#$$@cleancity.com  
+  1. Enter email tidimalomadikana@gmail.com  
 - Expected vs Actual Result:  
   Expected: Rejected as invalid  
   Actual: Accepted without error  
@@ -186,4 +186,20 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Severity: Major  
 - Priority: Medium  
 - Environment: Chrome v114, 
-- Status: In Review  
+- Status: In Review
+
+### 🔹 Bug ID: BUG011
+- Summary: Navigation Tabs Not Highlighting
+-Date Logged: 2025-07-10
+-Affected Feature: Main Page Navigation
+-Steps to Reproduce:
+Log into the application
+Click any navigation tab (Awareness, Login ,Register)
+Observe tab highlighting behavior
+-Expected vs Actual Result:
+Expected: Current tab should be visually highlighted
+Actual: Only "Home" tab remains highlighted regardless of active page
+-Severity: Minor
+-Priority: Medium
+-Environment: Google Chrome v115, Microsoft Edge v114, Windows 11
+=Status: Open
