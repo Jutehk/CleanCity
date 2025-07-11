@@ -144,6 +144,14 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 - Minor/Cosmetic: 2  
 - Focus Areas: Registration, Filters, Admin UI, Validation
 
+```mermaid
+pie title Defect
+    "Critical": 1 
+    "Major": 7 
+    "Minor/Cosmetic": 2
+     
+```
+
 📄 View: [Defect Log](./tests/defect-log.md)
 
 ---
