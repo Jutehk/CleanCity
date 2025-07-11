@@ -14,7 +14,7 @@ const mockStorage = (() => {
 global.localStorage = mockStorage; // Important to do this before importing
 
 //  Import after mock is ready
-const dataService = require('../../src/dataService');
+const dataService = require('./dataService');
 
 beforeEach(() => {
   localStorage.clear(); // reset mock storage
