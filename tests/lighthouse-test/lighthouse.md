@@ -2,7 +2,7 @@
 
 **Date:** 2025-07-08  
 **Tool:** Google Lighthouse  
-**Tested URL:** 
+**Tested URL:** http://127.0.0.1:5500/index.html
 
 ---
 
@@ -24,11 +24,6 @@
 - Optimize image loading (e.g., use next-gen formats).
 - Serve assets with efficient cache policy.
 - Reduce server response time.
-
-### Diagnostics:
-- First Contentful Paint: *(Add actual value if available)*
-- Time to Interactive: *(Add actual value if available)*
-- Largest Contentful Paint: *(Add actual value if available)*
 
 ---
 

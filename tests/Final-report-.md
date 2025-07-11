@@ -55,13 +55,12 @@ This comprehensive testing report covers the complete testing activities for Cle
 
 ## 📊 Test Environment
 
-| **Component** | **Specification** |
-|---------------|-------------------|
-| **Browsers** | Chrome, Firefox, Safari |
-| **Operating Systems** | Windows, Mac, Linux |
-| **Screen Resolutions** | 1920x1080, 1366x768, Mobile (375x667) |
-| **Test Data** | Synthetic user accounts and sample data |
-| **Network** | Stable broadband connection |
+| **Component**          | **Specification**                       |
+|------------------------|-----------------------------------------|
+| **Browsers**           | Chrome, Firefox, Safari                 |
+| **Operating Systems**  | Windows, Mac, Linux                     |
+| **Screen Resolutions** | 1920x1080, 1366x768, Mobile (375x667)   |
+| **Test Data**          | Synthetic user accounts and sample data |
 
 ---
 
@@ -85,49 +84,49 @@ This comprehensive testing report covers the complete testing activities for Cle
 
 ## 📅 Testing Schedule
 
-| **Phase** | **Start Date** | **End Date** | **Duration** | **Status** |
-|-----------|----------------|--------------|--------------|------------|
-| Test Planning | July 3, 2025 | July 3, 2025 | 1 day | ✅ Complete |
-| Test Environment Setup | July 3, 2025 | July 4, 2025 | 1 day | ✅ Complete |
-| Test Execution | July 4, 2025 | July 8, 2025 | 4 days | ✅ Complete |
-| Defect Analysis | July 8, 2025 | July 9, 2025 | 1 day | ✅ Complete |
-| Report Preparation | July 9, 2025 | July 11, 2025 | 2 days | ✅ Complete |
+| **Phase**              | **Start Date** | **End Date** | **Duration** | **Status**  |
+|------------------------|----------------|--------------|--------------|-------------|
+| Test Planning          | July 3, 2025   | July 3, 2025 | 1 day        | ✅ Complete |
+| Test Environment Setup | July 3, 2025   | July 4, 2025 | 1 day        | ✅ Complete |
+| Test Execution         | July 4, 2025   | July 8, 2025 | 4 days       | ✅ Complete |
+| Defect Analysis        | July 8, 2025   | July 9, 2025 | 1 day        | ✅ Complete |
+| Report Preparation     | July 9, 2025   | July 11, 2025| 2 days       | ✅ Complete |
 
 ---
 
 ## 🔍 Scope Definition
 
-| **In Scope** | **Out of Scope** |
-|--------------|------------------|
-| Scheduling waste pickup | Advanced browser compatibility testing |
-| User registration and authentication | Performance and load testing |
-| Calendar selection and time management | Third-party integrations |
-| Notification system functionality | Database performance optimization |
-| Admin features and permissions | Mobile app testing |
-| Status updates and scheduling workflows | API security testing |
+| **In Scope**                            | **Out of Scope**                       |
+|-----------------------------------------|----------------------------------------|
+| Scheduling waste pickup                 | Advanced browser compatibility testing |
+| User registration and authentication    | Performance and load testing           |
+| Calendar selection and time management  |                                        |
+| Notification system functionality       |                                        |
+| Admin features and permissions          |                                        |
+| Status updates and scheduling workflows |                      |
 
 ---
 
 ## 🧪 Test Case Summary
 
-| **Test Case ID** | **Test Description** | **Status** | **Priority** | **Key Issue** |
-|------------------|---------------------|------------|--------------|---------------|
-| TC001 | Login and Registration Link Redirect | ❌ | High | Registration link shows 404 error |
-| TC002 | Welcome Message Visibility | ❌ | Medium | Message hidden by top banner |
-| TC003 | Awareness Page Layout | ❌ | Low | No padding between content blocks |
-| TC004 | Password Field Visibility Toggle | ❌ | High | No toggle icon present |
-| TC005 | Admin Navigation Bar Layout | ❌ | Medium | Items stacked vertically on desktop |
-| TC006 | Registration Form Submission | ✅ | High | Working correctly |
-| TC007 | Registration Form Validation | ✅ | Medium | All validation messages appear |
-| TC008 | Combined Status and City Filters | ❌ | High | Shows incorrect mix, wrong filter counts |
-| TC009 | Filter Count Accuracy | ❌ | Medium | Count missing or showing wrong numbers |
-| TC010 | Login Authentication | ✅ | High | Working correctly |
-| TC011 | Form Validation | ✅ | Medium | Error messages and blocking work |
-| TC012 | Password Complexity Enforcement | ❌ | High | Accepts all passwords without validation |
-| TC013 | Password Confirmation Matching | ✅ | Medium | Correctly rejects mismatched passwords |
-| TC014 | Unrestricted Email Acceptance | ❌ | Medium | Accepts any email format |
-| TC015 | Prefix Requirement | ❌ | Medium | Accepts non-prefixed emails |
-| TC016 | Role-Based Dashboard Routing | ✅ | High | Correctly routes users based on role |
+| **Test Case ID** | **Test Description**      | **Status** | **Priority**  | **Key Issue**                    |
+|------------------|---------------------------|------------|---------------|----------------------------------|
+| TC001 | Login and Registration Link Redirect | ❌         | High         | Registration link shows 404 error |
+| TC002 | Welcome Message Visibility           | ❌         | Medium       | Message hidden by top banner |
+| TC003 | Awareness Page Layout                | ❌         |Low           | No padding between content blocks |
+| TC004 | Password Field Visibility Toggle     | ❌         | High         | No toggle icon present |
+| TC005 | Admin Navigation Bar Layout          | ❌         | Medium       | Items stacked vertically on desktop |
+| TC006 | Registration Form Submission         | ✅         | High         | Working correctly |
+| TC007 | Registration Form Validation         | ✅         | Medium       | All validation messages appear |
+| TC008 | Combined Status and City Filters     | ❌         | High         | Shows incorrect mix, wrong filter counts |
+| TC009 | Filter Count Accuracy                | ❌         | Medium       | Count missing or showing wrong numbers |
+| TC010 | Login Authentication                 | ✅         | High         | Working correctly |
+| TC011 | Form Validation                      | ✅         | Medium       |Error messages and blocking work |
+| TC012 | Password Complexity Enforcement      | ❌         | High         | Accepts all passwords without validation |
+| TC013 | Password Confirmation Matching       | ✅         | Medium       | Correctly rejects mismatched passwords |
+| TC014 | Unrestricted Email Acceptance        | ❌         | Medium       | Accepts any email format |
+| TC015 | Prefix Requirement                   | ❌         | Medium       | Accepts non-prefixed emails |
+| TC016 | Role-Based Dashboard Routing         | ✅         | High         | Correctly routes users based on role |
 
 ---
 
@@ -141,13 +140,13 @@ This comprehensive testing report covers the complete testing activities for Cle
 - **Defects Found**: 10 critical/major defects
 
 ### Test Results by Category
-| **Category** | **Total** | **Passed** | **Failed** | **Pass Rate** |
-|--------------|-----------|------------|------------|---------------|
-| Authentication | 4 | 2 | 2 | 50% |
-| UI/UX | 4 | 0 | 4 | 0% |
-| Form Validation | 4 | 3 | 1 | 75% |
-| Navigation | 2 | 1 | 1 | 50% |
-| Admin Features | 2 | 0 | 2 | 0% |
+| **Category**    | **Total** | **Passed** | **Failed** | **Pass Rate** |
+|-----------------|-----------|------------|------------|---------------|
+| Authentication  | 4         | 2          | 2          | 50%           |
+| UI/UX           | 4         | 0          | 4          | 0%            |
+| Form Validation | 4         | 3          | 1          | 75%           |
+| Navigation      | 2         | 1          | 1          | 50%           |
+| Admin Features  | 2         | 0          | 2          | 0%            |
 
 ### Defect Distribution by Severity
 
@@ -366,6 +365,5 @@ The testing of CleanCity application revealed significant issues requiring immed
 ---
 
 **Report Prepared By:** Team Espada  
-**Review Date:** July 11, 2025  
-**Next Review:** July 18, 2025  
-**Document Version:** 1.0
+**Submission Date:** July 16, 2025  
+ 
