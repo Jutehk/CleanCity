@@ -45,8 +45,9 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: Hidden behind top banner  
 - Severity: Minor  
 - Priority: Medium  
-- Environment: Firefox v124, Ubuntu 22.04  
-- Status: In Review  
+- Environment:  Microsoft Edge
+- Status: In Review
+- Evidence :
 
 ---
 
@@ -61,9 +62,9 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: Tightly packed elements with no padding  
 - Severity: Cosmetic  
 - Priority: Low  
-- Environment: Chrome v114, macOS Ventura  
-- Status: Open  
- 
+- Environment:  Microsoft Edge,Mozilla Firefox ,google chrome
+- Status: Open
+- Evidence :
 
 ---
 
@@ -79,8 +80,9 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: Toggle icon is missing; password always hidden  
 - Severity: Major  
 - Priority: High  
-- Environment: Chrome v114, Android 12  
-- Status: Open  
+- Environment:Google Chrome v114, Microsoft edge
+- Status: Open
+- Evidence :
 
 
 ---
@@ -98,7 +100,8 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Severity: Major  
 - Priority: Medium  
 - Environment: Edge v118, Windows 11  
-- Status: Open  
+- Status: Open
+- Evidence :
 
 ---
 
@@ -113,9 +116,9 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: Mix of unrelated results; count incorrect or missing  
 - Severity: Critical  
 - Priority: High  
-- Environment: Chrome v114, Linux Mint  
+- Environment: Chrome v114, Microsoft edge 
 - Status: Open  
-
+-Evidence :
 ---
 ### 🔹 Bug ID: BUG007
 - Summary: Accepts Weak Passwords  
@@ -129,8 +132,9 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: All passwords accepted  
 - Severity: Major  
 - Priority: High  
-- Environment: Safari v16, iPhone 13  
-- Status: Open  
+- Environment: Safari v16, Microsoft edge
+- Status: Open
+- evidence :
 
 
 ---
@@ -163,7 +167,7 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: Accepted without error  
 - Severity: Major  
 - Priority: Medium  
-- Environment: Firefox v124, Ubuntu 22.04  
+- Environment: Firefox v124, microsoft edge 
 - Status: Open  
  
 
@@ -181,5 +185,5 @@ This defect log is used to record, track, and manage all known bugs identified d
   Actual: Count doesn't change or disappears  
 - Severity: Major  
 - Priority: Medium  
-- Environment: Chrome v114, macOS Monterey  
+- Environment: Chrome v114, 
 - Status: In Review  
