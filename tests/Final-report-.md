@@ -91,7 +91,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 | Unit Test Pass Rate         | 100%        |
 | Selenium E2E Tests Passed   | 4 / 4       |
 
-📄 View: [Test Cases](./tests/test-cases.md) | [Defect Log](./tests/defect-log.md)
+📄 View: [Test Cases](./test-cases.md) | [Defect Log](./defect-log.md)
 
 ---
 
@@ -105,7 +105,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
   - User uniqueness enforcement
   - Feedback persistence
 
-📄 View: [dataService.test.js](./tests/utils/dataService.test.js)
+📄 View: [dataService.test.js](./utils/dataService.test.js)
 
 ---
 
@@ -118,7 +118,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 | `feedback.py`    | Feedback form submission  |
 | `logout.py`      | Login-logout cycle        |
 
-📁 View Folder: [Selenium Tests](./tests/selenium/)
+📁 View Folder: [Selenium Tests](./selenium/)
 
 ---
 
@@ -131,7 +131,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 | Best Practices | 90    |
 | SEO            | **100** ✅ |
 
-📄 View: [Lighthouse Report](./tests/lighthouse-report.html)
+📄 View: [Lighthouse Report](./lighthouse/lighthouse-report.html)
 
 ---
 
@@ -152,7 +152,7 @@ pie title Defect
      
 ```
 
-📄 View: [Defect Log](./tests/defect-log.md)
+📄 View: [Defect Log](./defect-log.md)
 
 ---
 
@@ -167,19 +167,8 @@ pie title Defect
 | Defect Tracking          | ≥ 15 logs  | ✅ 10 tracked (real defects) |
 | Project Kanban Usage     | Full cycle | ✅ Done    |
 
-📎 View: [GitHub Project Board Screenshot](./tests/screenshots/kanban_board.png)
+📎 View: [GitHub Project Board Screenshot](./screenshots/kanban_board.png)
 
----
-
-## 📎 Supporting Artifacts
-
-- [Test Cases](./tests/test-cases.md)  
-- [Defect Log](./tests/defect-log.md)  
-- [Jest Tests](./tests/utils/dataService.test.js)  
-- [Selenium Scripts](./tests/selenium/)  
-- [Screenshots](./tests/screenshots/)  
-- [Lighthouse HTML Report](./tests/lighthouse-report.html)  
-- [Test Environment Setup](./tests/environment_setup.md)
 
 ---
 
@@ -203,14 +192,16 @@ The CleanCity application successfully passed unit and integration-level testing
 
 ## 📎 Appendices
 
-- [Test Plan](./tests/test-plan.md)
-- [Test Cases](./tests/test-cases.md)
-- [Defect Log](./tests/defect-log.md)
-- [Jest Tests](./tests/utils/dataService.test.js)
-- [Selenium Scripts](./tests/selenium/)
-- [Screenshots](./tests/screenshots/)
-- [Lighthouse HTML Report](./tests/lighthouse/lighthouse-report.html)
+- [Test Plan](./test-plan.md)
+- [Test Cases](./test-cases.md)
+- [Defect Log](./defect-log.md)
+- [Jest Tests](./utils/dataService.test.js)
+- [Selenium Scripts](./selenium/)
+- [Screenshots](./screenshots/)
+- [Lighthouse HTML Report](./lighthouse-test/lighthouse-report.html)
 - [GitHub Project Board (Kanban)](https://github.com/your-team-name/cleancity/projects/1)
+- [Test Environment Setup](./test_env.md)
+
 ---
 
 **Prepared By:**  
