@@ -14,11 +14,10 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 ---
 ## 📑 Table of Contents
 1. [Executive Summary](#-executive-summary)
-2. [Team Information](#-team-information)
-3. [Testing Objectives](#-testing-objectives)
-4. [Test Approach](#-test-approach)
-5. [Test Environment](#-test-environment)
-6. [Entry and Exit Criteria](#-entry-and-exit-criteria)
+2. [Team Information](#-team-members)
+3. [Testing Objectives](#-testing-goals)
+4. [Test Approach](#-test-scope)
+5. [Tools Used](#-tools-used)
 7. [Testing Schedule](#-testing-schedule)
 8. [Scope Definition](#-scope-definition)
 9. [Test Case Summary](#-test-case-summary)
