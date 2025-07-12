@@ -97,7 +97,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 | `feedback.py`    | Feedback form submission  |
 | `logout.py`      | Login-logout cycle        |
 
-📁 View Folder: [Selenium Tests](./selenium/)
+📁 View Folder: [Selenium Tests](./selenium-test/)
 
 ---
 
@@ -110,7 +110,7 @@ This report summarizes the quality assurance efforts conducted by Team Espada fo
 | Best Practices | 90    |
 | SEO            | **100** ✅ |
 
-📄 View: [Lighthouse Report](./lighthouse/lighthouse-report.html)
+📄 View: [Lighthouse Report](./lighthouse-test/lighthouse-report.html)
 
 ---
 
@@ -178,7 +178,7 @@ The CleanCity application successfully passed unit and integration-level testing
 - [Selenium Scripts](./selenium/)
 - [Screenshots](./screenshots/)
 - [Lighthouse HTML Report](./lighthouse-test/lighthouse-report.html)
-- [GitHub Project Board (Kanban)](https://github.com/your-team-name/cleancity/projects/1)
+- [GitHub Project Board (Kanban)](https://github.com/users/Jutehk/projects/4)
 - [Test Environment Setup](./test_env.md)
 
 ---
