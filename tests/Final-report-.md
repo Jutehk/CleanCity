@@ -146,7 +146,7 @@ pie title Defect
 | Defect Tracking          | ≥ 15 logs  | ✅ 10 tracked (real defects) |
 | Project Kanban Usage     | Full cycle | ✅ Done    |
 
-📎 View: [GitHub Project Board Screenshot](./screenshots/kanban_board.png)
+📎 View: [GitHub Project Board Screenshot](./screenshots/Kanban-screenshot.png)
 
 
 ---
