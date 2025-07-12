@@ -12,26 +12,6 @@
 This report summarizes the quality assurance efforts conducted by Team Espada for the CleanCity web application. Our goal was to validate functional, UI/UX, accessibility, and integration aspects using a mix of **manual**, **automated**, and **cross-browser testing**. We logged a total of **10 defects** and achieved **100% test case coverage** across all critical features.
 
 ---
-## 📑 Table of Contents
-1. [Executive Summary](#-executive-summary)
-2. [Team Information](#-team-members)
-3. [Testing Objectives](#-testing-goals)
-4. [Test Approach](#-test-scope)
-5. [Tools Used](#-tools-used)
-7. [Testing Schedule](#-testing-schedule)
-8. [Scope Definition](#-scope-definition)
-9. [Test Case Summary](#-test-case-summary)
-10. [Test Metrics and Results](#-test-metrics-and-results)
-11. [Risk Analysis](#-risk-analysis)
-12. [Detailed Defect Report](#-detailed-defect-report)
-13. [Automated Testing Summary](#-automated-testing-summary)
-14. [Lighthouse Audit Summary](#-lighthouse-audit-report)
-15. [Lessons Learned](#-lessons-learned)
-16. [Evidence and Attachments](#-evidence-and-attachments)
-17. [Conclusion and Recommendations](#-conclusion)
-18. [Appendices](#-appendices)
-
----
 ## 👥 Team Members
 
 | Name             | Role                         |
