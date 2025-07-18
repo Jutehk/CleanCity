@@ -197,7 +197,7 @@ https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG008%20(2).png
 - Priority: Medium  
 - Environment: Chrome v114, 
 - Status: In Review
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG010.png
+- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG006.png
 
 ### 🔹 Bug ID: BUG011
 - Summary: Navigation Tabs Not Highlighting
