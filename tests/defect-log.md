@@ -48,7 +48,7 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: Medium  
 - Environment:  Microsoft Edge
 - Status: In Review
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG002.png
+- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG002.png
 
 ---
 
@@ -65,7 +65,7 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: Low  
 - Environment:  Microsoft Edge,Mozilla Firefox ,google chrome
 - Status: Open
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG003.png
+- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG003.png
 
 ---
 
@@ -83,8 +83,8 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: High  
 - Environment:Google Chrome v114, Microsoft edge
 - Status: Open
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG004.png
-
+- Evidence :
+https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG004.png
 
 ---
 
@@ -102,7 +102,7 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: Medium  
 - Environment: Edge v118, Windows 11  
 - Status: Open
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG005.png
+- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG005.png
 
 ---
 
@@ -119,7 +119,7 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: High  
 - Environment: Chrome v114, Microsoft edge 
 - Status: Open  
--Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG006.png
+-Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG006.png
 ---
 ### 🔹 Bug ID: BUG007
 - Summary: Accepts Weak Passwords  
@@ -135,8 +135,8 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: High  
 - Environment: Safari v16, Microsoft edge
 - Status: Open
-- evidence :1,https://github.com/Jutehk/CleanCity/blob/main/tests/BUG007%20(2).png
--           2,https://github.com/Jutehk/CleanCity/blob/main/tests/BUG007.png
+- evidence :1,https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG007%20(2).png
+  2,https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG007%20(2).png
 
 
 ---
@@ -154,8 +154,8 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: Medium  
 - Environment: Chrome v114, Windows 10  
 - Status: Open
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG008.png
--          2,https://github.com/Jutehk/CleanCity/blob/main/tests/BUG008%20(2).png
+- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG008%20(2).png
+  2,https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG008.png
 
 
 ---
@@ -195,7 +195,7 @@ This defect log is used to record, track, and manage all known bugs identified d
 - Priority: Medium  
 - Environment: Chrome v114, 
 - Status: In Review
-- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/BUG010.png
+- Evidence :https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG010.png
 
 ### 🔹 Bug ID: BUG011
 - Summary: Navigation Tabs Not Highlighting
@@ -212,4 +212,4 @@ Actual: Only "Home" tab remains highlighted regardless of active page
 -Priority: Medium
 -Environment: Google Chrome v115, Microsoft Edge v114, Windows 11
 -Status: Open
--Evidence : https://github.com/Jutehk/CleanCity/blob/main/tests/BUG011.png
+-Evidence : https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG011.png
