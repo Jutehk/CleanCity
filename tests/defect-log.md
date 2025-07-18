@@ -173,8 +173,10 @@ https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG004.png
 - Priority: Medium  
 - Environment: Firefox v124, microsoft edge 
 - Status: Open
-- evidence ::https://github.com/Jutehk/CleanCity/blob/main/tests/BUG008.png
--          2,https://github.com/Jutehk/CleanCity/blob/main/tests/BUG008%20(2).png
+- evidence :
+
+https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG008%20(2).png
+  2,https://github.com/Jutehk/CleanCity/blob/main/tests/screenshots/BUG008.png
 
 - 
  
