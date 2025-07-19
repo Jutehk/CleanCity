@@ -42,6 +42,7 @@ To validate that the system correctly:
 | TC014            | Unrestricted Email Acceptance     | Accepts all formats, even invalid                           | Manual Test                         |
 | TC015            | Prefix Requirement                | Accepts non-prefixed emails                                 | Manual Test                         |
 | TC016            | Role-Based Dashboard Routing      | Correct routing per role                                    | Manual Test                         |
+| TC017            | Login – SQL Injection Attempt     | Attempt injection in email/password fields                  | Manual Test                         |
 
 ---
 
@@ -177,4 +178,12 @@ To validate that the system correctly:
 - **Status:** ✅
 
 ---
+
+
+### ✅ TC017: Login – SQL Injection Attempt
+- **Steps:** Input `' OR 1=1--` in email/password
+- **Expected:** Input rejected or sanitized
+- **Actual:** Login fails as expected, input not executed
+- **Status:** ✅
+
 
