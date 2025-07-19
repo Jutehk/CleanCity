@@ -11,10 +11,9 @@ Welcome to the `tests/` folder for **CleanCity – Waste Pickup Scheduler**, a Q
 | `test-plan.md`              | Comprehensive testing strategy including scope, objectives, tools, and timeline |
 | `test-cases.md`             | Detailed functional and non-functional test cases with expected vs actual outcomes |
 | `defect-log.md`             | Logged bugs with severity, status, environments, and SonarLint code analysis issues |
-| `traceability-matrix.md`    | Mapping between test cases and project requirements for full coverage verification |
 | `team-collaboration/`       | Folder with communication logs and team meeting notes |
 | `final-report.md`           | Summary of QA findings, testing metrics, and recommendations |
-| `screenshots/` *(optional)* | Evidence for test case execution and failed scenarios |
+| `screenshots/`              | Evidence for test case execution and failed scenarios |
 
 ---
 
